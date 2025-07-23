@@ -39,31 +39,31 @@ const ServicesSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light mb-6">Our Services</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive solutions designed to drive growth and innovation across multiple industries
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 group">
-              <CardHeader>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+            <Card key={index} className="border-none bg-card/50 backdrop-blur group">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-lg font-medium">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
-                <ul className="space-y-2 mb-6">
+                <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
+                <ul className="space-y-1 mb-6">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                    <li key={idx} className="flex items-center text-xs text-muted-foreground">
+                      <span className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></span>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                <Button variant="ghost" className="w-full text-sm">
                   Learn More
                 </Button>
               </CardContent>
@@ -72,11 +72,11 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-16">
-          <h3 className="text-2xl font-semibold mb-4">Ready to Transform Your Business?</h3>
-          <p className="text-muted-foreground mb-6">
+          <h3 className="text-xl font-light mb-4">Ready to Transform Your Business?</h3>
+          <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
             Let's discuss how our services can help you achieve sustainable growth
           </p>
-          <Button variant="cta" size="lg" className="text-lg px-8 py-3">
+          <Button variant="default" size="lg" className="px-8">
             Get Started Today
           </Button>
         </div>

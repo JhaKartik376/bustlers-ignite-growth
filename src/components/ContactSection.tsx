@@ -37,16 +37,16 @@ const ContactSection = () => {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light mb-6">Get In Touch</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start your journey with The Bustlers? Let's discuss how we can help transform your business.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <Card className="shadow-elegant">
+          <Card className="border-none bg-card/50 backdrop-blur">
             <CardHeader>
-              <CardTitle className="text-2xl">Send us a Message</CardTitle>
+              <CardTitle className="text-xl font-medium">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -103,7 +103,7 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="hero" size="lg" className="w-full">
+                <Button type="submit" variant="default" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>
@@ -146,9 +146,9 @@ const ContactSection = () => {
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-primary text-white">
-              <h3 className="text-xl font-semibold mb-4">Why Choose The Bustlers?</h3>
-              <ul className="space-y-2">
+            <Card className="p-6 border-none bg-card/50 backdrop-blur">
+              <h3 className="text-lg font-medium mb-4">Why Choose The Bustlers?</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center">
                   <span className="mr-2">✓</span>
                   Expert team with proven track record
@@ -168,7 +168,7 @@ const ContactSection = () => {
               </ul>
             </Card>
 
-            <Button variant="cta" size="lg" className="w-full">
+            <Button variant="outline" size="lg" className="w-full">
               <span className="mr-2">💬</span>
               Chat on WhatsApp
             </Button>
