@@ -36,26 +36,26 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6">Our Services</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10 sm:mb-14 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6">Our Services</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive solutions designed to drive growth and innovation across multiple industries
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service, index) => (
             <Card key={index} className="border-none bg-card/50 backdrop-blur group">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-lg font-medium">
+              <CardHeader className="pb-3 sm:pb-4">
+                <CardTitle className="text-base sm:text-lg font-medium">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
-                <ul className="space-y-1 mb-6">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">{service.description}</p>
+                <ul className="space-y-1 mb-4 sm:mb-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-xs text-muted-foreground">
                       <span className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></span>
@@ -63,7 +63,7 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="ghost" className="w-full text-sm">
+                <Button variant="ghost" className="w-full text-xs sm:text-sm">
                   Learn More
                 </Button>
               </CardContent>
@@ -71,12 +71,12 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <h3 className="text-xl font-light mb-4">Ready to Transform Your Business?</h3>
-          <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
+        <div className="text-center mt-10 sm:mt-16">
+          <h3 className="text-lg sm:text-xl font-light mb-3 sm:mb-4">Ready to Transform Your Business?</h3>
+          <p className="text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto">
             Let's discuss how our services can help you achieve sustainable growth
           </p>
-          <Button variant="default" size="lg" className="px-8">
+          <Button variant="default" size="lg" className="w-full sm:w-auto px-8">
             Get Started Today
           </Button>
         </div>

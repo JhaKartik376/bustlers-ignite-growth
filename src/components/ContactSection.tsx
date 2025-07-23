@@ -34,23 +34,23 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-muted">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6">Get In Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10 sm:mb-14 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6">Get In Touch</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start your journey with The Bustlers? Let's discuss how we can help transform your business.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           <Card className="border-none bg-card/50 backdrop-blur">
             <CardHeader>
-              <CardTitle className="text-xl font-medium">Send us a Message</CardTitle>
+              <CardTitle className="text-lg sm:text-xl font-medium">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Input
                       name="name"
@@ -71,8 +71,8 @@ const ContactSection = () => {
                     />
                   </div>
                 </div>
-                
-                <div className="grid sm:grid-cols-2 gap-4">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Input
                       name="phone"
@@ -110,45 +110,45 @@ const ContactSection = () => {
             </CardContent>
           </Card>
 
-          <div className="space-y-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-              <div className="space-y-4">
+          <div className="space-y-6 sm:space-y-8">
+            <Card className="p-4 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Contact Information</h3>
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full flex items-center justify-center text-white">
                     📧
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">hello@thebustlers.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
-                    📱
-                  </div>
-                  <div>
-                    <p className="font-medium">WhatsApp</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">hello@thebustlers.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                    📱
+                  </div>
+                  <div>
+                    <p className="font-medium">WhatsApp</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 bg-primary rounded-full flex items-center justify-center text-white">
                     🌐
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">Serving Global Markets</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">Serving Global Markets</p>
                   </div>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-6 border-none bg-card/50 backdrop-blur">
-              <h3 className="text-lg font-medium mb-4">Why Choose The Bustlers?</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+            <Card className="p-4 sm:p-6 border-none bg-card/50 backdrop-blur">
+              <h3 className="text-base sm:text-lg font-medium mb-3 sm:mb-4">Why Choose The Bustlers?</h3>
+              <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-center">
                   <span className="mr-2">✓</span>
                   Expert team with proven track record
